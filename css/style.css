@@ -1,0 +1,267 @@
+/* Layout */
+body{
+    margin:0;
+}
+.container{
+    width:85%;
+    max-width:1200px;
+    margin:0 auto;
+}
+img{
+    max-width:100%;
+    display:block;
+}
+.image-full{
+    max-height:300px;
+    width:100%;
+    object-fit:cover;
+    margin-bottom:2em;
+}
+/* Layout Ends */
+
+
+/* NAVBAR */
+header{
+    background: #F8F8F8;
+    justify-content: center;
+    padding:2em 0;
+    text-align:center;
+}
+.container-flex{
+    display:flex;
+    justify-content: space-between;
+    flex-direction:column;
+}
+nav ul{
+    list-style:none;
+    padding:0;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+}
+nav li{
+    margin-left:2em;
+}
+nav a{
+    text-decoration:none;
+    font-weight:500;
+    color:#717171;
+    padding:0.25em 0;
+}
+nav a:hover, nav a:focus{
+    color:#1792D2;;
+}
+.current-page a:hover{
+    color:#717171;
+}
+.current-page{
+    margin-bottom:2px soid black;
+}
+/* Navbar Ends */
+
+
+/* Widgets */
+.sidebar-widget{
+    border:20px solid #efefef;
+    margin-top: 2rem;
+    padding:1em;
+}
+.sidebar img:hover, .projects img:hover{
+    transition: 2s ease transform;
+    transform: scale(1.05);
+}
+.widget-title,
+.widget-recent-post-title{
+    font-size:1rem;
+}
+.widget-post-title{
+    color:#143774;
+}
+.widget-title{
+    font-family:'Ubuntu',sans-serif;
+    font-weight:700;
+}
+.widget-recent-post{
+    display:flex;
+    flex-direction:column;
+    border-bottom:1px solid #787878;
+    margin-bottom:1em;
+}
+.widget-recent-post:last-child{
+    border:0;
+    margin:0;
+}
+.widget-image{
+    order:-1;
+    object-fit: cover;
+    object-position: top;
+}
+/* Widget Ends */
+
+
+/* articles */
+.article-featured{
+    border-bottom: #707070 1px solid;
+    padding-bottom:2em;
+    margin-top:2em;
+}
+.article-recent{
+    display: flex;
+    flex-direction:column;
+    margin-top:2em;
+}
+.article-recent-secondary{
+    order:1;
+}
+.article-recent-main{
+    order:2;
+}
+.image-profile{
+    margin:2rem auto;
+    max-height:50%;
+    max-width:50%;
+    object-fit: contain;
+}
+.image-profile:hover{
+    transition:2s ease transform;
+    transform:scale(1.05);
+    filter: drop-shadow(1px 1px 10px gray);
+}
+.job-title{
+    margin-top:2rem;
+}
+/* Articles Ends */
+
+
+/* Footers */
+footer{
+    margin-top:2rem;
+    color:#143774;
+    background:#efefef;
+    text-align:center;
+    padding:2em 0;
+}
+.social-icon{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+}
+.social-item {
+	height: 30px;
+	width: 30px;
+	margin: 0 5px;
+}
+.social-item img {
+	filter: grayscale(1);
+	transition: .1s ease filter;
+}
+.social-item:hover img {
+	filter: grayscale(0);
+}
+/*Footer Ends*/
+
+
+/* TYPOS */
+h1,
+h2,
+h3{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight:400;
+    color:#143774;
+    margin-top:0;
+}
+h3{
+    color:#1792D2;
+}
+body{
+    font-family:'Ubuntu',sans-serif;
+    font-weight:300;
+    color:#707070;
+    font-size:1.125rem;
+}
+h1{
+    font-size:2rem;
+    margin:0;
+}
+a{
+    color: #1792D2;
+}
+a:hover,a:focus{
+    color:#143774;
+}
+strong{
+    font-weight:700;
+}
+
+.subtitle{
+    margin:0;
+    color: #1792D2;
+    font-size:.8rem;
+    letter-spacing: .2rem;
+}
+.article-title{
+    font-size:1.5rem;
+}
+.article-read-more, .article-info{
+    font-size:0.875rem;
+}
+.article-read-more{
+    color:#1792D2;
+    text-decoration:none;
+    font-weight:500;
+    font-size:1rem;
+}
+.article-read-more:hover{
+    color:#143774;
+}
+.article-info{
+    font-size:1rem;
+    margin:1rem 0;
+}
+/* Typos End*/
+
+
+/* Media Query */
+@media(min-width:675px){
+    .container-flex{
+        flex-direction: row;
+    }
+    nav ul{
+        flex-direction:row;
+    }
+    main{
+        width:70%;
+    }
+    aside{
+        width:25%;
+        min-width:200px;
+        margin-left:1em;
+    }
+    .article-recent{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .article-recent-main{
+        width:68%;
+    }
+    .article-recent-secondary{
+        width:30%;
+    }
+    .article-image{
+        width:100%;
+        height:260px;
+        object-fit: cover;
+        object-position: left;
+    }
+    .article-featured{
+        display:flex;
+        flex-direction:column;
+    }
+    .article-image{
+        order:-2;
+    }
+    .article-info{
+        order:-1;
+    }
+}
+/* Media Query Ends */

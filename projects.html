@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Site Project</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class='container container-flex'>
+            <div class='site-title'>
+                <h1>My Portfolio</h1> 
+                <p class="subtitle">A minimalistic Design</p>                  
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class='current-page'><a href="projects.html">Projects</a></li>
+                    <li><a href='skills.html'>Skills</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class='container container-flex projects'>
+        <main role='main'>
+            <article class='article-recent'>
+                <div class='article-recent-main'>
+                    <h2 class='article-title'>Responsive Site</h2>
+                    <p class='article-body'>There was a challenge provided by YIPL to create a <strong>responsive front-end</strong>.The objective was to recreate the site as close as possible and to make it responsive. We were provided a sample of how the site should look in desktop view.</p>
+                    <h2 class='article-read-more'>Created Using:</h2>
+                    <p>HTML, CSS, JS</p>
+                </div>
+                <div class='article-recent-secondary'>
+                    <img src="img/cap-yipl.JPG" alt="img" class='article-image'>
+                    <p class='article-info'>September, 2020</p>
+                </div>
+            </article>
+            <article class='article-recent'>
+                <div class='article-recent-main'>
+                    <h2 class='article-title'>Smart Chat Assistant</h2>
+                    <p class='article-body'>Smart Chat Assitant, is an application which works as a standalone desktop app. It's main objective is to <strong>provide voice assistance</strong> and have conversation with the user using NLP. The app can send mail, provide search results, play music etc.</p>
+                    <h2 class='article-read-more'>Created Using:</h2>
+                    <p>PyTorch, GTTS, Python, NLTK</p>
+                </div>
+                <div class='article-recent-secondary'>
+                    <img src="img/cap-chat.jpg" alt="img" class='article-image'>
+                    <p class='article-info'>August, 2020</p>
+                </div>
+            </article>
+            <article class='article-recent'>
+                <div class='article-recent-main'>
+                    <h2 class='article-title'>Bus Tracking and Reservation System</h2>
+                    <p class='article-body'>Bus Tracking and Reservation System, is a real-time mobile application used to <strong>view the current location of buses</strong> around our locality. There are two apps; one on the user side and the other on the driver side. The driver app is used to broadcast the location of the vehicle at real-time. The user app can be used to reserve seats and to get a maps view of the current location of the bus.</p>
+                    <h2 class='article-read-more'>Created Using:</h2>
+                    <p>Java, Firebase, GoogleMaps API</p>
+                </div>
+                <div class='article-recent-secondary'>
+                    <img src="img/cap-yatri.jpg" alt="img" class='article-image'>
+                    <p class='article-info'>July, 2019</p>
+                </div>
+            </article>
+            <article class='article-recent'>
+                <div class='article-recent-main'>
+                    <h2 class='article-title'>LPG Gas level Indicator</h2>
+                    <p class='article-body'>It's a hardware project that provides <strong>infromation about the LPG</strong> gas to the user. The project uses a load sensor to calculate the weight of the cylinder. By monitoring the weight, the volume of gas left can be determined. Also, there's some additional gas sensors, which detect the leakage of the gas. A mobile app was created to show all these data to the user and also for providing alerts during the gas leakage.</p>
+                    <h2 class='article-read-more'>Created Using:</h2>
+                    <p>Arduino, Load sensor, Gas sensor, Java</p>
+                </div>
+                <div class='article-recent-secondary'>
+                    <img src="img/img-skills1.jpg" alt="img" class='article-image'>
+                    <p class='article-info'>February, 2018</p>
+                </div>
+            </article>
+        </main>
+
+        <aside class='sidebar'>
+            <div class='sidebar-widget'>
+                <h2 class='widget-title'>Briefly,</h2>
+                <img src="img/img-main.jpg" alt="img" class='widget-image'>
+                <p class='widget-body'>These are some projects that I have created.</p>
+            </div>
+        </aside>
+    </div>
+    
+    <footer>
+        <p>Copyright © 2020 Aaryan Poudel</p>
+        <div class="social-icon">
+            <div class="social-item">
+                <a href="https://www.instagram.com/aaryanpoudel/" target="_blank"><img src="img/icons8-instagram-old-96.png" alt="img">
+            </div>
+            <div class="social-item">
+                <a href="https://www.youtube.com/user/TheAaryan1/" target="_blank"><img src="img/icons8-youtube-96.png" alt="img"></a>
+            </div>
+            <div class="social-item">
+                <a href="https://www.facebook.com/ryan.poudel/" target="_blank"><img src="img/icons8-facebook-96.png" alt="img"></a>
+            </div>
+            <div class="social-item">
+                <a href="https://www.linkedin.com/in/aaryan-poudel-7764681a7" target="_blank"><img src="img/icons8-linkedin-96.png"/></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
